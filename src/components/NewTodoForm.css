@@ -38,6 +38,7 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 .placeholder {
   position: absolute;
   left: 12px;
@@ -72,4 +73,10 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.new-todo-button:hover,
+.new-todo-button:focus {
+  background: #fde68a;
 }
