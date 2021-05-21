@@ -1,0 +1,75 @@
+.new-todo-form {
+  display: flex;
+  flex-direction: column;
+  color: #eaeaea;
+  align-items: center;
+  justify-content: center;
+  background: #313d5a;
+  height: 200px;
+  border-radius: 15px;
+  width: 100%;
+}
+.todo-input-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-top: 20px solid transparent;
+}
+
+.todo-input-group input:focus + .placeholder {
+  top: -5px;
+  font-size: 13px;
+  color: #ffff;
+}
+
+.todo-input-group
+  input:not(:placeholder-shown)
+  + .placeholder
+  .todo-input-group
+  input:focus
+  + .placeholder {
+  background: red;
+}
+
+.new-todo-input {
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.placeholder {
+  position: absolute;
+  left: 12px;
+  bottom: 50%;
+  top: 12px;
+  transform: translateY(-50%);
+  color: #313d5a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+/* if there is value in the input  */
+.placeholder-top {
+  position: absolute;
+  left: 12px;
+  bottom: 50%;
+  top: 12px;
+  transform: translateY(-50%);
+  color: #313d5a;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: -5px;
+  font-size: 13px;
+  color: #ffff;
+}
+
+.new-todo-button {
+  padding: 5px;
+  background: #fbbf24;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
